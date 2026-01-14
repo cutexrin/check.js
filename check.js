@@ -1,9 +1,8 @@
 export default function handler(req, res) {
-  
   const config = {
     allowedCountries: ["IN"],
     blockedStatesIndia: ["WB", "BIHAR", "UP"],
-    stateBlockEnabled: true, 
+    stateBlockEnabled: true,
     blockedMessage: "Not found your country in earth I think you other galaxy 😂",
     stateBlockedMessage: "Your state is restricted ⚠"
   };
@@ -18,7 +17,6 @@ export default function handler(req, res) {
     });
   }
 
-  
   if (!config.allowedCountries.includes(country.toUpperCase())) {
     return res.status(200).json({
       allowed: false,
@@ -26,7 +24,6 @@ export default function handler(req, res) {
     });
   }
 
-  
   if (
     country.toUpperCase() === "IN" &&
     config.stateBlockEnabled &&
@@ -39,9 +36,8 @@ export default function handler(req, res) {
     });
   }
 
-  
   return res.status(200).json({
     allowed: true,
     message: "Access granted"
   });
-}
+        }
