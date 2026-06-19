@@ -1,0 +1,27 @@
+[
+    {
+        "country": "BD",
+        "city": "Dhaka",
+        "message": "App not available in Dhaka"
+    },
+    {
+        "country": "IN",
+        "city": "Delhi",
+        "message": "App not available in Delhi"
+    },
+    {
+        "country": "PK",
+        "city": "Karachi",
+        "message": "App not available in Karachi"
+    },
+    {
+        "country": "US",
+        "city": "New York",
+        "message": "App not available in New York"
+    },
+    {
+        "country": "GB",
+        "city": "London",
+        "message": "App not available in London"
+    }
+]
